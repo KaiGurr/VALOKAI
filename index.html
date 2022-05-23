@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+	<!--Index-->
+	<head>
+		<!--FACEBOOK//METAVERSE STINKT NACH EINEM RIESEN HAUFEN MUELL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		<meta name="author" content="Kai Groenke :D">
+		<meta charset="UTF-8">
+
+		
+		<title>VALORANT - Index Page/Seite 1</title>
+		
+		<link href="index.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
+		
+		<script>
+			/*Super Toller Uhr*/
+			function startTime() {
+				const today = new Date();
+				let h = today.getHours();
+				let m = today.getMinutes();
+				let s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+				setTimeout(startTime, 1000);
+			}
+
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+	
+		</script>
+	</head>
+	<body onload="startTime()">
+		<!-- HEADER -->
+		<div class="header">
+			<div class="he1">
+				<div style="float: left; margin-top:-25px;">
+					<a href="https://discord.gg/GeavW9Jtu5">
+						<img src="valorant-logo.png" height="128" width="128" alt="Valorant Logo">
+					</a>
+				</div>
+				<div>
+					<h1>VALORANT 🚭</h1>
+				</div>
+					<!--UHR AUF DER RECHTEN SEITE BEIM HEADER-->
+					<div class="clock" id="txt"></div>
+			</div>
+		</div>
+		<!--NAVIGATIONSLEISTE -->
+		<div class="topnav">
+			<a href="index.html" class="active" title="Index Seite - wo du gerade drauf bist">Seite 1</a>
+			<a href="page.html" title="KEINE AHNUNG">Seite 2</a>
+			<a href="page1.html" title="Aim Trainer :>">Seite 3</a>
+			<a href="page2.html" title="Nichts - außer Leiden und Schmerz">Seite 4</a>
+		</div>
+		<div class="main">
+			<!-- Was ist VALORANT Sektion -->
+			<div style="margin-right: 600px;">
+				<h2>Wat isn VALORANT?!?</h2>
+				<p>VALORANT, das Spiel was von RIOT GAMES(TM) erstellt/published<br>
+				wurde, ist ein charakterbasierter taktischer 5-gegen-5-Shooter, <br>
+				so ähnlich wie Counter Strike: Global Offensive und Overwatch.</p>
+				<p>Wie auf dem Bildchen auf der rechten Seite angedeutet,<br>
+				macht dieses Spiel extremst viel Spaß und bringt enorm massive Freude ans Licht!
+				</p>
+				<p>Hier kann man ganz viele spaß haben diese.</p>
+			</div>
+			<div class="img-border">
+				<img src="https://upload.motgame.vn/photos/motgame-vn/2021/04/Valorant-Meme-Anh-che-6.jpg" alt="Komische Sage">
+			</div>
+			<!-- Zugang zur Spielseite des Spiels von Riot Games, weil es sonst doof wäre von mir es nicht zu erwähnen.
+			Schließlich gehört mit das Spiel gar nicht, sondern dieser Firma. -->
+			
+			<div style="margin-top:120px;">
+				<h2>Über Riot Games</h2>
+				<p>Riot Games, die super tolle Spielentwicklungs-/Publishingfirma die sehr bekannt für Spiele wie<br>
+				VALORANT, League of Legends und andere Spiele bekannt ist. Hat (aus offensichtlichen Gründen) eine Hauptseite für ihr Spiel VALORANT: <a href="https://playvalorant.com/de-de/">>>> ZUM SPIEL HIER ENTLANG!!!</a></p>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<div class="footer">
+			<p>© 2022 Riot Games, Inc. Riot Games, VALORANT sowie alle dazugehörigen Logos sind Warenzeichen, Dienstleistungsmarken und/oder eingetragene Warenzeichen von Riot Games, Inc.</p>
+			<div style="float: right;margin-top: -50px">
+				<img src="riotgames-logo.png" height="64" width="128" alt="Riot Games Logo">
+			</div>
+		</div>
+	</body>
+</html>
